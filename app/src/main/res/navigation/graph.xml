@@ -20,17 +20,8 @@
         android:label="fragment_another"
         tools:layout="@layout/fragment_another" >
         <action
-            android:id="@+id/action_anotherFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.example.fragmenttp.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details" >
-        <action
-            android:id="@+id/action_detailsFragment_to_paymentFragment"
-            app:destination="@id/paymentFragment" />
+            android:id="@+id/action_anotherFragment_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
     </fragment>
     <fragment
         android:id="@+id/paymentFragment"
@@ -46,4 +37,8 @@
         android:name="com.example.fragmenttp.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="DetailsActivity"
+        android:label="DetailsActivity" />
 </navigation>

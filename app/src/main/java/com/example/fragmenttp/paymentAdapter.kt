@@ -21,7 +21,7 @@ class paymentAdapter(val data:List<Payment>): RecyclerView.Adapter<paymentAdapte
 
     override fun onBindViewHolder(holder: paymentAdapter.MyViewHolder, position: Int) {
         holder.apply {
-      total.text=data[position].PrixTotal
+      total.text= data[position].PrixTotal.toString()
 
         }
 
